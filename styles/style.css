@@ -27,12 +27,16 @@
 .expand {
   width: 270px;
   display: inline-block;
+  position: relative;
 }
 
 .expand::after {
   content: url("../images/arrow.png");
   width: 6px;
-  float: right;
+  position: absolute;
+  right: 3px;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .menu-container {
