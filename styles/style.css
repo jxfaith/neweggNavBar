@@ -42,13 +42,16 @@
 }
 
 .menu-container-inner {
-  display: inline-flex;
+  display: inline-grid;
+  grid-template-columns: 300px 300px 300px 300px;
+  grid-template-rows: max-content max-content;
+  grid-auto-flow: column;
   background: white;
   padding: 15px;
 }
 
 .menu-cell {
-  width: 350px;
+  width: 300px;
 }
 
 .menu-cell ul {
@@ -71,4 +74,8 @@
 
 .menu-level-1:hover .menu-level-2 {
   display: inline-block;
+}
+
+.menu-highlight {
+  background: #ecf1fe;
 }
