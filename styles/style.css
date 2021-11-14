@@ -1,0 +1,15 @@
+.category-nav {
+  list-style-type: none;
+  padding: 0px 0px 0px 10px;
+  background: #f0f4fe;
+  width: 15%;
+}
+
+.category-nav li {
+  font-size: 18px;
+  padding: 8px;
+}
+
+.category-nav img {
+  vertical-align: text-bottom;
+}
