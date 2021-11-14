@@ -19,7 +19,7 @@
   padding: 0;
 }
 
-.category-nav ul li::after {
+.category-nav li::after {
   content: url("../images/arrow.png");
   width: 6px;
   float: right;
@@ -29,4 +29,26 @@
   vertical-align: text-top;
   width: 9%;
   padding-right: 2%;
+}
+
+.menu-container {
+  background: white;
+}
+
+.menu-cell {
+  width: 250px;
+  display: grid;
+}
+
+.menu-subtitle {
+  font-style: italic;
+  font-weight: bold;
+}
+
+.menu-level-2 {
+  display: none;
+}
+
+.menu-level-1:hover .menu-level-2 {
+  display: block;
 }
