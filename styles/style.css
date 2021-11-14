@@ -1,15 +1,32 @@
 .category-nav {
-  list-style-type: none;
-  padding: 0px 0px 0px 10px;
   background: #f0f4fe;
-  width: 15%;
+  width: 270px;
+  padding: 5px;
+  margin: 0;
+  padding: 15px;
+}
+
+.category-nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 .category-nav li {
   font-size: 18px;
-  padding: 8px;
+  line-height: 2.25;
+  margin: 0;
+  padding: 0;
+}
+
+.category-nav ul li::after {
+  content: url("../images/arrow.png");
+  width: 6px;
+  float: right;
 }
 
 .category-nav img {
-  vertical-align: text-bottom;
+  vertical-align: text-top;
+  width: 9%;
+  padding-right: 2%;
 }
