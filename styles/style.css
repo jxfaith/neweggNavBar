@@ -13,9 +13,8 @@
 
 .category-nav li {
   font-size: 18px;
-  line-height: 2.25;
   margin: 0;
-  padding: 0;
+  padding: 10px 15px;
 }
 
 .category-nav img {
@@ -25,7 +24,7 @@
 }
 
 .expand {
-  width: 270px;
+  width: 260px;
   display: inline-block;
   position: relative;
 }
@@ -66,6 +65,7 @@
 .menu-subtitle {
   font-style: italic;
   font-weight: bold;
+  padding: 10px 15px;
 }
 
 .menu-level-1 {
