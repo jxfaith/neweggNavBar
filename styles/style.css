@@ -84,4 +84,5 @@ div.menu-level-2:hover {
 
 .menu-highlight {
   background: #ecf1fe;
+  grid-row-start: 1;
 }
