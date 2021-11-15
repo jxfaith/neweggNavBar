@@ -1,5 +1,6 @@
 .category-nav {
   background: #f0f4fe;
+  position: relative;
   width: 270px;
   padding: 5px;
   margin: 0;
@@ -39,9 +40,9 @@
 }
 
 .menu-container {
-  float: right;
+  position: absolute;
+  top: 0px;
   width: 255px;
-  transform: translate(0, -25px);
 }
 
 .menu-container-inner {
