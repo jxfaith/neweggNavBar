@@ -24,7 +24,7 @@
 }
 
 .expand {
-  width: 260px;
+  width: 285px;
   display: inline-block;
   position: relative;
 }
@@ -33,7 +33,7 @@
   content: url("../images/arrow.png");
   width: 6px;
   position: absolute;
-  right: 3px;
+  right: 28px;
   top: 50%;
   transform: translateY(-50%);
 }
@@ -41,7 +41,7 @@
 .menu-container {
   float: right;
   width: 255px;
-  transform: translateY(-15px);
+  transform: translate(0, -25px);
 }
 
 .menu-container-inner {
@@ -76,7 +76,8 @@
   display: none;
 }
 
-.menu-level-1:hover .menu-level-2 {
+div:hover + div.menu-level-2,
+div.menu-level-2:hover {
   display: inline-block;
 }
 
