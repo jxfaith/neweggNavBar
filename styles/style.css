@@ -54,6 +54,15 @@
   padding: 15px;
 }
 
+.menu-container-inner-small {
+  display: inline-grid;
+  grid-template-columns: 300px 300px 300px 300px;
+  grid-template-rows: max-content;
+  grid-auto-flow: column;
+  background: white;
+  padding: 15px;
+}
+
 .menu-cell {
   width: 300px;
 }
