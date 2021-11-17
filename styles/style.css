@@ -45,6 +45,12 @@
   width: 255px;
 }
 
+.menu-container-bottom {
+  position: absolute;
+  bottom: 0px;
+  width: 255px;
+}
+
 .menu-container-inner {
   display: inline-grid;
   grid-template-columns: 300px 300px 300px 300px;
