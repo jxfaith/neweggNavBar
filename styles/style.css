@@ -42,9 +42,13 @@
   content: url("../images/arrow.png");
   width: 6px;
   position: absolute;
-  right: 35px;
+  right: 17px;
   top: 50%;
   transform: translateY(-50%);
+}
+
+.menu-cell .expand::after {
+  right: -13px;
 }
 
 .menu-container {
