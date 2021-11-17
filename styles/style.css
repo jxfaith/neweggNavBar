@@ -51,6 +51,11 @@
   right: -13px;
 }
 
+.menu-cell ul li {
+  display: flex;
+  align-items: center;
+}
+
 .menu-container {
   position: absolute;
   top: 0px;
