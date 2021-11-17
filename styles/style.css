@@ -8,6 +8,11 @@
   list-style-type: none;
 }
 
+.category-nav li:hover {
+  color: #007aff;
+  background-color: rgba(228, 235, 253, 1);
+}
+
 .category-nav ul {
   list-style-type: none;
 }
@@ -34,7 +39,7 @@
   content: url("../images/arrow.png");
   width: 6px;
   position: absolute;
-  right: 28px;
+  right: 35px;
   top: 50%;
   transform: translateY(-50%);
 }
@@ -42,12 +47,14 @@
 .menu-container {
   position: absolute;
   top: 0px;
+  left: 300px;
   width: 255px;
 }
 
 .menu-container-bottom {
   position: absolute;
   bottom: 0px;
+  left: 300px;
   width: 255px;
 }
 
@@ -84,12 +91,9 @@
   padding: 10px 15px;
 }
 
-.menu-level-1 {
-  width: 200%;
-}
-
 .menu-level-2 {
   display: none;
+  color: black;
 }
 
 div:hover + div.menu-level-2,
