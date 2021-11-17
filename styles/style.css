@@ -96,7 +96,7 @@
   color: black;
 }
 
-div:hover + div.menu-level-2,
+li:hover div + div.menu-level-2,
 div.menu-level-2:hover {
   display: inline-block;
 }
