@@ -18,20 +18,23 @@
 }
 
 .category-nav li {
+  height: 40px;
   font-size: 18px;
-  margin: 0;
-  padding: 10px 15px;
+  margin: auto;
+  padding: 0px 15px;
 }
 
 .category-nav img {
-  vertical-align: text-top;
-  width: 9%;
-  padding-right: 2%;
+  width: 26px;
+  padding-right: 6px;
+  align-self: center;
 }
 
 .expand {
-  width: 285px;
-  display: inline-block;
+  width: 270px;
+  height: 40px;
+  display: flex;
+  align-items: center;
   position: relative;
 }
 
