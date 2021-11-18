@@ -1,5 +1,5 @@
 body {
-  background: black;
+  background: darkcyan;
 }
 
 .category-nav {
@@ -77,6 +77,11 @@ body {
   left: 300px;
   background: white;
   padding: 15px;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 4px;
+  box-shadow: 10px 10px 10px 0 rgba(4, 32, 98, 0.2);
+  border-color: #eee;
 }
 
 .menu-container-inner {
@@ -98,6 +103,11 @@ body {
   font-style: italic;
   font-weight: bold;
   padding: 10px 15px;
+}
+
+.menu-level-2 {
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
 }
 
 .menu-level-2 {
