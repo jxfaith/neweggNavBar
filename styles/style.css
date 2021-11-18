@@ -47,6 +47,10 @@ body {
   padding: 10px 0px;
 }
 
+.menu-level-2 .expand {
+  width: 310px;
+}
+
 .expand::after {
   content: url("../images/arrow.png");
   width: 6px;
@@ -57,7 +61,7 @@ body {
 }
 
 .menu-cell .expand::after {
-  right: -13px;
+  right: 27px;
 }
 
 .menu-cell ul li {
@@ -116,8 +120,8 @@ body {
   z-index: 2;
 }
 
-li:hover > div + div.menu-level-2,
-div.menu-level-2:hover {
+li:hover > div + .menu-level-2,
+.menu-level-2:hover {
   display: inline-block;
 }
 
@@ -125,10 +129,19 @@ div.menu-level-2:hover {
   display: none;
   color: black;
   z-index: 3;
+  left: 310px;
 }
 
-li:hover > div + div.menu-level-3,
-li.menu-level-2:hover {
+.menu-arrow {
+  position: absolute;
+  width: 10px !important;
+  left: 301px;
+  z-index: 4;
+}
+
+li:hover > div + .menu-level-3,
+li:hover > div + .menu-level-3 + .menu-level-3,
+.menu-level-2:hover {
   display: inline-block;
 }
 
