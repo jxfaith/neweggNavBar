@@ -15,7 +15,8 @@ body {
 .category-nav li:hover {
   color: #007aff;
   background-color: rgba(228, 235, 253, 1);
-  transition: step-start;
+  transition: color 0.03s, background-color 0.03s;
+  transition-timing-function: step-end;
 }
 
 .category-nav ul {
@@ -110,23 +111,30 @@ body {
 }
 
 .menu-level-2 {
+  visibility: hidden;
+  transition: visibility 0.2s;
+  transition-timing-function: step-end;
+  color: black;
+  z-index: 2;
   border-top-left-radius: 0px;
   border-bottom-left-radius: 0px;
 }
 
-.menu-level-2 {
-  display: none;
-  color: black;
-  z-index: 2;
+.menu-level-2 li {
+  position: relative;
 }
 
 li:hover > div + .menu-level-2,
 .menu-level-2:hover {
-  display: inline-block;
+  visibility: visible;
+  transition: visibility 0.2s;
+  transition-timing-function: step-end;
 }
 
 .menu-level-3 {
-  display: none;
+  visibility: hidden;
+  transition: visibility 0.2s;
+  transition-timing-function: step-end;
   color: black;
   z-index: 3;
   left: 310px;
@@ -137,12 +145,15 @@ li:hover > div + .menu-level-2,
   width: 10px !important;
   left: 301px;
   z-index: 4;
+  top: 11px;
 }
 
 li:hover > div + .menu-level-3,
 li:hover > div + .menu-level-3 + .menu-level-3,
 .menu-level-2:hover {
-  display: inline-block;
+  visibility: visible;
+  transition: visibility 0.2s;
+  transition-timing-function: step-end;
 }
 
 .menu-highlight {
