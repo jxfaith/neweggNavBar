@@ -80,12 +80,9 @@ body {
   position: absolute;
   top: 0px;
   left: 300px;
-  background: white;
-  padding: 15px;
   border-width: 1px;
   border-style: solid;
   border-radius: 4px;
-  box-shadow: 10px 10px 10px 0 rgba(4, 32, 98, 0.2);
   border-color: #eee;
 }
 
@@ -93,10 +90,14 @@ body {
   display: flex;
   box-sizing: border-box;
   position: relative;
+  background: white;
+  padding: 15px;
+  box-shadow: 10px 10px 10px 0 rgba(4, 32, 98, 0.2);
 }
 
 .menu-cell {
   width: 300px;
+  position: relative;
 }
 
 .menu-cell ul {
@@ -140,12 +141,16 @@ li:hover > div + .menu-level-2,
   left: 310px;
 }
 
+.menu-level-3.menu-container {
+  transform: translateY(-50%);
+  top: 50%;
+}
+
 .menu-arrow {
-  position: absolute;
+  position: relative;
   width: 10px !important;
-  left: 301px;
+  left: -25px;
   z-index: 4;
-  top: 11px;
 }
 
 li:hover > div + .menu-level-3,
