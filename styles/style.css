@@ -61,6 +61,12 @@ body {
   transform: translateY(-50%);
 }
 
+.menu-level-3 .expand::after {
+  position: relative;
+  left: 10px;
+  transform: none;
+}
+
 .menu-cell .expand::after {
   right: 27px;
 }
