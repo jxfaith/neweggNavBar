@@ -31,7 +31,6 @@ body {
 .category-nav li {
   font-size: 18px;
   margin: auto;
-  padding: 0px 15px;
 }
 
 .category-nav > li {
@@ -45,16 +44,12 @@ body {
 }
 
 .expand {
-  width: 240px;
+  width: 220px;
   height: 100%;
   display: flex;
   align-items: center;
   position: relative;
-  padding: 10px 0px;
-}
-
-.menu-level-2 .expand {
-  width: 260px;
+  padding: 10px 15px;
 }
 
 .expand::after {
@@ -73,17 +68,15 @@ body {
 }
 
 .menu-cell .expand::after {
-  right: 27px;
+  right: 0px;
 }
 
 .menu-cell ul li {
-  /* display: flex; */
   align-items: center;
-  padding: 0px 15px;
 }
 
 .menu-cell ul li p {
-  padding: 10px 0px;
+  padding: 10px 15px;
   margin: 0;
 }
 
