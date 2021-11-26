@@ -1,0 +1,170 @@
+body {
+  background: darkcyan;
+}
+
+.category-nav {
+  background: linear-gradient(
+    180deg,
+    rgba(236, 241, 254, 0.9) 61%,
+    rgba(236, 241, 254, 0.7) 88%,
+    rgba(236, 241, 254, 0) 97%
+  );
+  position: relative;
+  width: 240px;
+  height: 650px;
+  margin: 0;
+  padding: 15px;
+  list-style-type: none;
+}
+
+.category-nav li:hover {
+  color: #2a69df;
+  background-color: rgba(228, 235, 253, 1);
+  transition: color 0.03s, background-color 0.03s;
+  transition-timing-function: step-end;
+}
+
+.category-nav ul {
+  list-style-type: none;
+}
+
+.category-nav li {
+  font-size: 18px;
+  margin: auto;
+}
+
+.category-nav > li {
+  transition: color 0.25s, background-color 0.25s;
+}
+
+.category-nav img {
+  width: 26px;
+  padding-right: 6px;
+  align-self: center;
+}
+
+.expand {
+  width: 220px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding: 10px 15px;
+}
+
+.expand::after {
+  content: url("../images/arrow.png");
+  width: 6px;
+  position: absolute;
+  right: 17px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.menu-level-3 .expand::after {
+  position: relative;
+  left: 10px;
+  transform: none;
+}
+
+.menu-cell .expand::after {
+  right: 0px;
+}
+
+.menu-cell ul li {
+  align-items: center;
+}
+
+.menu-cell ul li p {
+  padding: 10px 15px;
+  margin: 0;
+}
+
+.menu-container {
+  position: absolute;
+  top: 0px;
+  left: 270px;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 4px;
+  border-color: #eee;
+}
+
+.menu-container-inner {
+  display: flex;
+  box-sizing: border-box;
+  position: relative;
+  background: white;
+  padding: 15px;
+  box-shadow: 10px 10px 10px 0 rgba(4, 32, 98, 0.2);
+}
+
+.menu-cell {
+  width: 250px;
+  position: relative;
+}
+
+.menu-cell ul {
+  margin: 0;
+  padding: 0;
+}
+
+.menu-subtitle {
+  font-style: italic;
+  font-weight: bold;
+  padding: 10px 15px;
+}
+
+.menu-level-2 {
+  visibility: hidden;
+  transition: visibility 0.2s;
+  transition-timing-function: step-end;
+  color: black;
+  z-index: 2;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+
+.menu-level-2 li {
+  position: relative;
+}
+
+li:hover > div + .menu-level-2,
+.menu-level-2:hover {
+  visibility: visible;
+  transition: visibility 0.2s;
+  transition-timing-function: step-end;
+}
+
+.menu-level-3 {
+  visibility: hidden;
+  transition: visibility 0.2s;
+  transition-timing-function: step-end;
+  color: black;
+  z-index: 3;
+  left: 260px;
+}
+
+.menu-level-3.menu-container {
+  transform: translateY(-50%);
+  top: 50%;
+}
+
+.menu-arrow {
+  position: absolute;
+  width: 10px !important;
+  left: -10px;
+  z-index: 4;
+}
+
+li:hover > div + .menu-level-3,
+li:hover > div + .menu-level-3 + .menu-level-3,
+.menu-level-2:hover {
+  visibility: visible;
+  transition: visibility 0.2s;
+  transition-timing-function: step-end;
+}
+
+.menu-highlight {
+  background: #ecf1fe;
+}
