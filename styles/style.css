@@ -151,9 +151,9 @@ li:hover > div + .menu-level-2,
 }
 
 .menu-arrow {
-  position: relative;
+  position: absolute;
   width: 10px !important;
-  left: -25px;
+  left: -10px;
   z-index: 4;
 }
 
